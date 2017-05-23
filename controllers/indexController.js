@@ -4,11 +4,8 @@ var entries = require('./entryController'),
 module.exports = {
     index : function(req, res){
        	// Index controller
-       	entries.get();
-   	},
+       	data = entries.get();
 
-   	get : function(data) {
-   		// Set variables for view and render that view
        	options = {
        		view: 'index',
        		mess: data

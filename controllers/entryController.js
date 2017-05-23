@@ -1,7 +1,7 @@
 module.exports = {
-    get : function(callback) {
+    get : function() {
        	// Index controller
 
-       	data('It caught the callback :D');
+       	return "Hello!";
    	},
 }
