@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
 // Connect to the database
-mongoose.connect('mongodb://localhost/skabelonen');
+mongoose.connect('mongodb://localhost/minimal-framework');
 
 // Set public folder at root folder
 app.use(express.static(__dirname + '/public'));
