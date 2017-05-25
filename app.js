@@ -1,28 +1,32 @@
 // Dependencies
-var express = require('express'),
-  mongoose = require('mongoose'),
-  bodyParser = require('body-parser'),
-  router = require('./routes/routes')
+const express = require('express')
+const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
+const router = require('./router')
+const conf = require('./conf')
 
-// Istantiate core variables
-var app = express(),
-  server = require('http').createServer(app)
+// Istantiate constant core variables
+const app = express()
+const server = require('http').createServer(app)
 
-// Set bodyParser settings for restful api
+// register global middleware before registering the router
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
 
 // Connect to the database
-mongoose.connect('mongodb://localhost/minimal-framework')
-
-// Set public folder at root folder
-app.use(express.static(__dirname + '/public'))
+mongoose.connect('mongodb://localhost/minimal-skeleton')
 
 // Set view engine to ejs.
 app.set('view engine', 'ejs')
 
-server.listen(process.env.PORT || 3000)
-console.log('Server listening on port 3000..')
+server.listen(conf.port, (err) => {
+ 	if (err) {
+   console.error(`Failed to bind http server on port ${conf.port}`)
+   console.error(err)
+   process.exit(1)
+ }
+  console.log(`HTTP Server is listening on port ${conf.port}`)
+})
 
 // Add our router file to our stack
 app.use(router)

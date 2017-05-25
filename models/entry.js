@@ -1,9 +1,11 @@
+'use strict'
+
 // Dependencies
-var restful = require('node-restful')
-var mongoose = restful.mongoose
+const restful = require('node-restful')
+const mongoose = restful.mongoose
 
 // Schema
-var entrySchema = new mongoose.Schema({
+const entrySchema = new mongoose.Schema({
   name: String,
   value: Number
 })
