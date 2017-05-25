@@ -3,15 +3,16 @@ var express = require('express'),
 	router = express.Router(),
 	path = '../controllers/';
 
-// Controllers
+// Controllers - Load controllers here
 var indexController = require(path+'indexController');
 
-// Models
+// Models - Load models here
 var entryModel = require('../models/entry');
 
-// Routes
+// Routes - Define routes here
 router.route('/').get(indexController.index);
 
+//Route for our rest api. First set the methods that should be available. Secondly register that new router
 entryModel.methods(['get', 'put', 'post', 'delete']);
 entryModel.register(router, '/entries');
 

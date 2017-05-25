@@ -2,8 +2,6 @@
 var express = require('express'),
 	mongoose = require('mongoose'),
 	bodyParser = require('body-parser'),
-	request = require('request'),
-	traceur = require('traceur'),
 	router = require('./routes/routes');
 
 // Istantiate core variables

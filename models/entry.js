@@ -8,5 +8,5 @@ var entrySchema = new mongoose.Schema({
 	value: Number
 });
 
-// Return model
+// Return the model as a restful model to allow it being used as a route.
 module.exports = restful.model('entries', entrySchema);
