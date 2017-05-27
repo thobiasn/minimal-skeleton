@@ -8,6 +8,10 @@ git clone https://github.com/thobiasn/Minimal-Skeleton
 cd Minimal-Skeleton
 npm install
 ```
+Minimal-Skeleton is now installed. Test the server by running:
+```
+node app
+```
 
 ### Todo
 * ~~Rewrite and adjust code.~~ Thanks to [vmarchaud](https://github.com/vmarchaud/Minimal-Framework)
