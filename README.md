@@ -1,6 +1,14 @@
 # Minimal-Skeleton
 A simple skeleton/baseline to get started with writing nodejs apps. I am a beginner and so, I am making this project to get a better understanding of nodejs and javascript.
 
+### Instructions
+To install minimal-skeleton and start using it as a baseline for your future apps. Simply follow these steps.
+```
+git clone https://github.com/thobiasn/Minimal-Skeleton
+cd Minimal-Skeleton
+npm install
+```
+
 ### Todo
 * ~~Rewrite and adjust code.~~ Thanks to [vmarchaud](https://github.com/vmarchaud/Minimal-Framework)
 * Create /assets folder to store img, js, fonts etc.
