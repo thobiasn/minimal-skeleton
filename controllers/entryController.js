@@ -14,9 +14,10 @@ module.exports = {
       if (err) {
         return res.render('error', { err: err })
       }
-
+      
       // now we can assume that we have a list of entries from the database
       // but it can be empty
+      // Remember: If you are planning to use this for something that might sometimes be empty. Like posts from a newly created user. Remember to apply a use case for this function, or remove it entirely (fun times were had..)
       if (entries.length === 0) {
         return res.render('entries', {
           entries: 'It looks like there is nothing inside the database'
