@@ -14,10 +14,13 @@ app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
 
 // Connect to the database
-mongoose.connect('mongodb://localhost/minimal-skeleton')
+mongoose.connect(conf.MONGODB_URI)
 
 // Set view engine to ejs.
 app.set('view engine', 'ejs')
+
+// Set static (public) path
+app.use(express.static(conf.static_path))
 
 server.listen(conf.port, (err) => {
  	if (err) {

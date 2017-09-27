@@ -6,10 +6,10 @@ const router = express.Router()
 const conf = require('./conf')
 
 // Controllers - Load controllers here
-const EntryController = require('./controllers/EntryController')
+const EntryController = require('./controllers/entryController')
 
 // Models - Load models here
-var entryModel = require('./models/Entry')
+var entryModel = require('./models/entry')
 
 // Routes - Define routes here
 router.get('/entries', EntryController.get)

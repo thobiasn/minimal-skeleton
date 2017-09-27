@@ -9,7 +9,7 @@ const constants = {
   views_path: path.resolve(__dirname, 'views'),
   models_path: path.resolve(__dirname, 'models'),
   controllers_path: path.resolve(__dirname, 'controllers'),
-  static_path: path.resolve(__dirname, 'assets'),
+  static_path: path.resolve(__dirname, 'public'),
   API_URL: 'http://localhost:3000',
   MONGODB_URI: 'mongodb://localhost/minimal-skeleton'
 }

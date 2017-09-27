@@ -1,7 +1,7 @@
 'use strict'
 
 // Dependencies
-const Entry = require('../models/Entry')
+const Entry = require('../models/entry')
 
 module.exports = {
   /**
