@@ -14,7 +14,7 @@ node app
 ```
 
 ### Todo
-* ~~Rewrite and adjust code.~~ Thanks to [vmarchaud](https://github.com/vmarchaud/Minimal-Framework)
+* ~~Rewrite and adjust code.~~ Thanks to [vmarchaud](https://github.com/vmarchaud)
 * ~~Create /public folder to store img, js, fonts etc.~~
 * ~~Clean up code and comments~~
 * ~~Fix definition~~
